@@ -1,0 +1,11 @@
+baseURL = "https://diary.oino.li"
+title = "Diary"
+languageCode = "ja-JP"
+theme = "hugo-journal"
+[params]
+  description = "Diary"
+  tagline = "You're always haunted by the idea you're wasting your life"
+  mainSections = ["post"]
+
+[author]
+  name = "dangorogoro"
