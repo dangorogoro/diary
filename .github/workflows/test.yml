@@ -25,8 +25,7 @@ jobs:
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
     - name: Deploy
-      #run: rsync -e ".git/" -e "ssh -i ./key -p ${SSH_PORT}" -r public/* $SSH_USER@$SSH_HOST:$DEPLOY_PATH
-      run: rsync -e "ssh -i ./key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p ${SSH_PORT}" -r public/* $SSH_USER@$SSH_HOST:$DEPLOY_PATH
+      run: rsync -Pe "ssh -i ./key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p ${SSH_PORT}" -r public/* $SSH_USER@$SSH_HOST:$DEPLOY_PATH
       env:
         SSH_USER: ${{ secrets.SSH_USER }}
         SSH_PORT: ${{ secrets.SSH_PORT }}
