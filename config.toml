@@ -6,7 +6,7 @@ theme = "hugo-journal"
   description = "Diary"
   tagline = "You're always haunted by the idea you're wasting your life"
   mainSections = ["post"]
-  #customCSS = ["/css/amazon.css"]
+  customCSS = ["/css/amazon.css"]
   amazonJpAffiliate = "dng04-22"
 [author]
   name = "dangorogoro"
