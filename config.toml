@@ -8,6 +8,6 @@ theme = "hugo-journal"
   mainSections = ["post", "media"]
   customCSS = ["/css/amazon.css"]
   amazonJpAffiliate = "kinak0pypy-22"
-  twitterCard = "/media/2021-08-04-ramen.jpeg"
+  twitterCard = "/media/icon.jpeg"
 [author]
   name = "dangorogoro"
