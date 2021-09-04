@@ -31,6 +31,8 @@
   <link rel="stylesheet" href="{{ . | absURL}}">
   {{ end }}
   
+
+
 <!-- SEO -->
 <link rel="canonical" href="{{ .Site.BaseURL }}">
 {{ if eq .RelPermalink "/" }}
@@ -47,7 +49,9 @@
 <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <!-- og images -->
-<meta property="og:image" content="{{.Site.Params.twitterCard}}">
+{{- with .Params.share_img | default .Site.Params.twitterCard}}
+<meta property="og:image" content="{{ . | absURL}}">
+{{- end}}
 <!-- Twitter Card Summary with large image -->
 <meta name="twitter:card" content="summary_large_image" /></meta>
 <meta name="twitter:site" content="{{ .Site.Social.writer_twitter_id }}"></meta>
@@ -55,8 +59,10 @@
 <meta name="twitter:title" content="{{ if eq .RelPermalink "/" }}<title>{{ .Site.Title }}</title>{{ else }}<title>{{ .Title }}&nbsp;-&nbsp;{{ .Site.Title }}</title>{{ end }}"></meta>
 <meta name="twitter:url" content="{{ .Permalink }}"></meta>
 <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}"></meta>
-<meta name="twitter:image" content="{{.Site.Params.twitterCard}}"></meta>
 
+{{- with .Params.share_img | default .Site.Params.twitterCard}}
+<meta name="twitter:image" content="{{ . | absURL}}"></meta>
+{{- end}}
 </head>
 
 <body>
