@@ -7,7 +7,7 @@ theme = "hugo-journal"
   tagline = "You're always haunted by the idea you're wasting your life"
   mainSections = ["post", "media"]
   customCSS = ["/css/amazon.css"]
-  amazonJpAffiliate = "kinak0pypy-22"
+  amazonJpAffiliate = "kinak0pypy02-22"
   twitterCard = "/media/icon.jpeg"
 [author]
   name = "dangorogoro"
