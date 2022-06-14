@@ -5,7 +5,7 @@ theme = "hugo-journal"
 ignoreErrors = ["error-remote-getjson"]
 [params]
   description = "Diary"
-  tagline = "You're always haunted by the idea you're wasting your life"
+  tagline = "想像し続けること、問い続けること、考えたことのないものに思いを馳せること、叶えられそうになくてもあきらめないこと、現実の歪から目を背けないこと、愛すること。何万光年も離れている「あなた」へつながっていく方法。"
   mainSections = ["post", "media"]
   customCSS = ["/css/amazon.css"]
   amazonJpAffiliate = "kinak0pypy02-22"
