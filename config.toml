@@ -3,6 +3,7 @@ title = "Diary"
 languageCode = "ja-JP"
 theme = "hugo-journal"
 ignoreErrors = ["error-remote-getjson"]
+enableGitInfo = true
 [params]
   description = "Diary"
   tagline = "想像し続けること、問い続けること、考えたことのないものに思いを馳せること、叶えられそうになくてもあきらめないこと、現実の歪から目を背けないこと、愛すること。何万光年も離れている「あなた」へつながっていく方法。"
