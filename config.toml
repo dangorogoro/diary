@@ -13,3 +13,5 @@ enableGitInfo = true
   twitterCard = "/media/icon.jpeg"
 [author]
   name = "dangorogoro"
+[taxonomies]
+  tag = "tags"

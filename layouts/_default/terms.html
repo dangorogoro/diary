@@ -1,0 +1,12 @@
+{{ partial "top.html" . }}
+<h2>タグ一覧！</h2>
+{{- range $termName, $entries := .Site.Taxonomies.tags }}
+<h3>{{ $termName }}</h3>
+  <ul>
+    {{- range $entries.Pages }}
+    <li><a href="{{ .RelPermalink }}">
+        {{.Date.Format "2006-01-02"}}: <a href="{{.RelPermalink}}">{{.Title}}</a>
+      </a>
+    {{- end }}
+  </ul>
+{{- end }}

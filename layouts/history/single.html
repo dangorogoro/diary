@@ -4,8 +4,7 @@
 <ul>
   {{ range first 100 (where .Site.RegularPages.ByLastmod.Reverse ".Draft" "!=" true)}}
     <li>
-      <time>{{.Lastmod.Format "2006-01-02"}}</time>:
-      <a href="{{.RelPermalink}}">{{.Title}}</a> ({{.Date.Format "2006-01-02"}})
+      <a href="{{.RelPermalink}}">{{.Date.Format "2006-01-02"}}: {{.Title}}</a> (Updated: <time>{{.Lastmod.Format "2006-01-02"}}</time>)
     </li>
   {{ end }}
 </ul>
