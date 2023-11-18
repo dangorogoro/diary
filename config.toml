@@ -20,6 +20,3 @@ enableGitInfo = true
 [services]
   [services.rss]
     limit = 20
-[frontmatter]
-  date = ["date", "publishDate", "lastmod"]
-  lastmod = ["lastmod", ":git"]
