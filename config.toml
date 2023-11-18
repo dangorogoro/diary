@@ -15,3 +15,11 @@ enableGitInfo = true
   name = "dangorogoro"
 [taxonomies]
   tag = "tags"
+[outputs]
+  home = ['html', 'rss']
+[services]
+  [services.rss]
+    limit = 20
+[frontmatter]
+  date = ["date", "publishDate", "lastmod"]
+  lastmod = ["lastmod", ":git"]
