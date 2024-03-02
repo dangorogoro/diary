@@ -6,7 +6,7 @@ ignoreErrors = ["error-remote-getjson"]
 enableGitInfo = true
 [params]
   description = "Diary"
-  tagline = "想像し続けること、問い続けること、考えたことのないものに思いを馳せること、叶えられそうになくてもあきらめないこと、現実の歪から目を背けないこと、愛すること。何万光年も離れている「あなた」へつながっていく方法。"
+  tagline = "想像し続けること、問い続けること、考えたことのないものに思いを馳せること、叶えられそうになくてもあきらめないこと、現実の歪から目を背けないこと、愛すること。何万光年も離れている「あなた」へつながっていく方法。(わたしたちが光の速さで進めないなら 帯より)"
   mainSections = ["post", "media"]
   customCSS = ["/css/amazon.css"]
   amazonJpAffiliate = "kinak0pypy02-22"
