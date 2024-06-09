@@ -10,7 +10,9 @@
   <meta name="author" content="{{ .Site.Author.name }}">
   <meta property="og:url" content="{{ .Permalink }}">
 
-  <link rel="shortcut icon" href="{{ if $.Site.Params.favicon }}{{ $.Site.Params.favicon }}{{ end }}">
+  {{- /* Favicons */}}
+  <link rel="shortcut icon" href="{{ .Site.Params.favicon}}">
+
   {{ if .IsHome -}}
   <title>{{ .Site.Title }}</title>
   <meta property="og:title" content="{{ .Site.Title }}">

@@ -11,7 +11,7 @@ enableGitInfo = true
   customCSS = ["/css/amazon.css"]
   amazonJpAffiliate = "kinak0pypy02-22"
   twitterCard = "/media/icon.jpeg"
-  favicon = "media/icon.ico"
+  favicon = "/media/icon.ico"
 [author]
   name = "dangorogoro"
 [taxonomies]
