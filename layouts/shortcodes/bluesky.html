@@ -1,9 +1,10 @@
 {{- $id := .Get "id" -}}
-{{- $link := printf "https://bsky.app/profile/bsky.app/post/%s" $id}}
+{{- $user := .Get "user" -}}
+{{- $link := printf "https://bsky.app/profile/%s/post/%s" $user $id}}
 {{- $q := querify "url" $link -}}
 {{- $request := printf "https://embed.bsky.app/oembed?%s" $q -}}
 
 {{- $res := resources.GetRemote $request -}}
-{{- $data := $res | transform.Unmarshal -}}
-{{- $html := $data.html -}}
+{{- $res = $res | transform.Unmarshal -}}
+{{- $html := $res.html -}}
 {{- $html | safeHTML -}}
